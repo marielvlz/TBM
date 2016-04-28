@@ -21,13 +21,10 @@ Cell* agregar(Cell *root, int numero){ //Agrega nodo
 	}
 
 void imprime_lista(Cell *root){ //Imprime Lista
-	//printf("%d", (((Cell*)root -> next)-> payload);
-	printf("*");
-	while ((root = ((Cell*)root->next)) != NULL){
+	while ((root = (root->next)) != NULL){
 		printf("--> %d", root->payload);
-		printf("--> %d", ((Cell)root.next)-> payload);
-		root = *((Cell*)root.next);
-	}
+		root = root->next;
+		}
 }
 
 Cell *pop(Cell *root){ //Salir
